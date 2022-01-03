@@ -4,14 +4,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Summarization</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: rgb(137, 165, 190);">
     <div class="navbar-fixed">
         <nav class="grey darken-4" role="navigation">
             <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo">ML Project</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="#aboutapp">About</a></li>
+                    <li><a href="about">About</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
@@ -19,17 +25,17 @@
     </div>
     <ul id="nav-mobile" class="sidenav">
         <li><a href="{{url_for('index')}}">Home</a></li>
-        <li><a href="#contactme">About</a></li>
+        <li><a href="about">About</a></li>
     </ul>
 
     <!--Slider -->
     <section class="slider">
+        <h2 class="center-align" style="margin-top: 150px;">Text Summarization</h2>
         <div id="index-banner" class="parallax-container">
             <ul class="slides">
                 <li>
                     <div class="caption center-align">
-                        <h2>Summarization Simplified</h2>
-                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                        <h5 class="light black-text hide-on-small-only">
                             Using SpaCy summarization
                         </h5>
                         <div class="row center">
@@ -37,21 +43,12 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="caption left-align">
-                        <h2>Text Summarizer with SpaCy</h2>
-                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                            NLP based App
-                        </h5>
-                        <a href="#aboutapp" class="btn btn-large waves-effect waves-light light-blue lighten-1">Learn More</a>
-                    </div>
-                </li>
             </ul>
         </div>
     </section>
 
     <!-- Start of Main Section -->
-    <div class="container">
+    <div class="container-fluid" style="background-color: rgb(249, 253, 253);">
         <div class="section">
             <div class="row">
                 <div class="input-field col s12 m10">
