@@ -1,6 +1,10 @@
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: rgb(226, 210, 210);
+}
+
+h2 {
+    margin-top: 50px;
 }
 
 p {
@@ -17,9 +21,9 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
-  }
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -34,6 +38,9 @@ p {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  h2{
+      font-size: 20px;
   }
 }
 
