@@ -73,14 +73,14 @@ def text_summarizer(text):
     for i in range(len(sorted_x)): 
         summary.append(str(sorted_x[i][0]).capitalize()) 
         counter += 1
-        if(counter >= 10):
+        if(counter >= 5):
             break
     
     return ' '.join(summary)
 
 @app.route('/about')
 def about():
-	return render_template('index.html')
+	return render_template('about.html')
 
 @app.route('/')
 def index():
